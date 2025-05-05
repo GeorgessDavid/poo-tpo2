@@ -1,13 +1,23 @@
-public class Alienigena implements SerVivo{
-    public Planeta planetaOrigen;
+package classes;
+
+import interfaces.SerVivo;
+
+public class Alienigena implements SerVivo {
+    public String nombre;
+    public String planetaOrigen;
     public String especie;
 
-    public static void Alienigena(Planeta planetaOrigen, String especie) {
+    public void Alienigena(String planetaOrigen, String especie) {
         this.planetaOrigen = planetaOrigen;
         this.especie = especie;
     }
 
     public void cambiarForma() {
-        System.out.printf("El alienígena de la especie %s cambia de forma.", especie);
+        System.out.printf("El alienígena %s, proveniente de la especie %s, cambia de forma.", this.nombre, this.especie);
+    }
+
+    @Override
+    public String obtenerNombre() {
+        return this.nombre;
     }
 }

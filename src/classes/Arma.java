@@ -1,3 +1,5 @@
+package classes;
+
 public class Arma {
     public String codigo;
     public String nombre;

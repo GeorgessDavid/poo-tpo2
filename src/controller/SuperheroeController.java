@@ -1,38 +1,20 @@
+package controller;
+
+import classes.EquipoSuperheroe;
+import classes.Superheroe;
+import interfaces.Equipo;
+
 import java.util.List;
 
-/*
- public class EquipoController {
-    private static EquipoController instance;
-    private Equipo equipo;
+public class SuperheroeController {
+    private static final SuperheroeController instance = new SuperheroeController();
+    private List<Equipo> equipos;
 
-    public static EquipoController getInstance() {
-        return instance;
+    public static SuperheroeController getInstance() {
+        return SuperheroeController.instance;
     }
 
-    public Equipo createEquipo(Equipo equipo) {
-        if (equipo instanceof Superheroe) {
-            return new EquipoSuperheroe();
-        }
-
-        if (equipo instanceof Villano) {
-            return new EquipoVillano();
-        }
-
-        throw new InvalidTeamTypeException("Tipo de equipo no válido.");
-    }
-}
-
-
- */
-
-
-public class SuperheroeController extends EquipoController {
-    private List<Superheroe> superheroes;
-    private String baseOperaciones;
-    private String mision;
-
-    @Override
-    public EquipoSuperheroe createEquipo(Equipo equipo) {
-        if (equipo instanceof )
+    public EquipoSuperheroe crearEquipo(List<Superheroe> superheroes) {
+        return new EquipoSuperheroe(superheroes);
     }
 }

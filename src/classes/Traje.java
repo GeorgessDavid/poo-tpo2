@@ -1,3 +1,5 @@
+package classes;
+
 public class Traje {
     public String nombre;
     public String descripcion;
@@ -5,7 +7,7 @@ public class Traje {
     public String debilidad;
     private int durabilidad;
 
-    public static void Traje(String nombre, String descripcion, String color, String debilidad, int durabilidad) {
+    public void Traje(String nombre, String descripcion, String color, String debilidad, int durabilidad) {
         this.nombre = nombre;
         this.descripcion = descripcion;
         this.color = color;

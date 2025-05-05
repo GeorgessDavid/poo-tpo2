@@ -1,5 +1,7 @@
+package interfaces;
+
 public interface Equipo {
-    public String nombre;
+    String obtenerNombre();
     
     public static void entrenar(){
         System.out.println("Entrenando al equipo...");

@@ -1,4 +1,6 @@
+package interfaces;
+
 public interface Equipamiento {
-    public String nombre;
-    public String descripcion;
+    String obtenerNombre();
+    String obtenerDescripcion();
 }

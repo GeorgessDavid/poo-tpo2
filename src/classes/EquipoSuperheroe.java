@@ -1,15 +1,21 @@
+package classes;
+
 import java.util.List;
 
 public class EquipoSuperheroe {
-    private List<Superheroe> superheroes;
+    private final List<Superheroe> superheroes;
     private String baseOperaciones;
     private String mision;
 
-    public String combatirCrimen() {
+    public EquipoSuperheroe(List<Superheroe> superheroes) {
+        this.superheroes = superheroes;
+    }
+
+    public void combatirCrimen() {
         System.out.printf("El equipo combate el crimen en la misión '%s'.", mision);
     }
 
-    public String salvarMundo() {
+    public void salvarMundo() {
         System.out.printf("El equipo salva el mundo en la misión '%s'.", mision);
     }
 
@@ -19,5 +25,21 @@ public class EquipoSuperheroe {
 
     public String obtenerMision() {
         return this.mision;
+    }
+
+    public void asignarBaseOperaciones(String baseOperaciones) {
+        this.baseOperaciones = baseOperaciones;
+    }
+
+    public void asignarMision(String mision) {
+        this.mision = mision;
+    }
+
+    public List<Superheroe> obtenerSuperheroes() {
+        return superheroes;
+    }
+
+    public void asignarSuperheroe(Superheroe superheroe) {
+        this.superheroes.add(superheroe);
     }
 }

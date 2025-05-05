@@ -1,13 +1,17 @@
+package classes;
+
+import interfaces.Poder;
+
 import java.util.List;
 
-public class Villano extends Alienigena implements Poderes {
+public class Villano extends Alienigena implements Poder {
     public String nombre;
     public String alias;
     public List<Poder> poderes;
     public String objetivo;
     public Arma arma;
 
-    public static void Villano(String nombre, String alias, List<Poder> poderes, String objetivo, Arma arma) {
+    public void Villano(String nombre, String alias, List<Poder> poderes, String objetivo, Arma arma) {
         this.nombre = nombre;
         this.alias = alias;
         this.poderes = poderes;

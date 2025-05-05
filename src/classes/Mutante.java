@@ -1,12 +1,14 @@
-public class Mutante implements SerVivo{
+package classes;
+
+import interfaces.SerVivo;
+
+public class Mutante extends Superheroe {
     public String nombre;
     public String mutacion;
-    public String tipoMutante;
 
-    public static void Mutante(String nombre, String mutacion, TipoMutante tipoMutante) {
+    public Mutante(String nombre, String mutacion) {
         this.nombre = nombre;
         this.mutacion = mutacion;
-        this.tipoMutante = tipoMutante;
     }
 
     public void teletransportar() {
@@ -15,5 +17,10 @@ public class Mutante implements SerVivo{
 
     public void autoRegenerarse(){
         System.out.printf("El mutante %s se autoregenera.", nombre);
+    }
+
+    @Override
+    public String obtenerNombre() {
+        return this.nombre;
     }
 }
