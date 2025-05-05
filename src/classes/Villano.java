@@ -11,7 +11,7 @@ public class Villano extends Alienigena implements Poder {
     public String objetivo;
     public Arma arma;
 
-    public void Villano(String nombre, String alias, List<Poder> poderes, String objetivo, Arma arma) {
+    public Villano(String nombre, String alias, List<Poder> poderes, String objetivo, Arma arma) {
         this.nombre = nombre;
         this.alias = alias;
         this.poderes = poderes;

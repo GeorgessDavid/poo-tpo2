@@ -7,7 +7,7 @@ public class Alienigena implements SerVivo {
     public String planetaOrigen;
     public String especie;
 
-    public void Alienigena(String planetaOrigen, String especie) {
+    public Alienigena(String planetaOrigen, String especie) {
         this.planetaOrigen = planetaOrigen;
         this.especie = especie;
     }

@@ -6,7 +6,7 @@ public class Arma {
     public String descripcion;
     public String estado;
 
-    public void Arma(String codigo, String nombre, String descripcion, String estado) {
+    public Arma(String codigo, String nombre, String descripcion, String estado) {
         this.codigo = codigo;
         this.nombre = nombre;
         this.descripcion = descripcion;

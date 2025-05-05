@@ -23,4 +23,11 @@ public abstract class Superheroe implements SerVivo {
         return this.nombre;
     }
 
+    public Traje obtenerTraje() {
+        return traje;
+    }
+
+    public void asignarTraje(Traje traje) {
+        this.traje = traje;
+    }
 }
