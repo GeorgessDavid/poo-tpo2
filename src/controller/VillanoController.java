@@ -1,5 +1,8 @@
 package controller;
 
+import classes.EquipoVillano;
+import classes.Villano;
+
 import java.util.List;
 
 public class VillanoController {
