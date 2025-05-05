@@ -8,6 +8,13 @@ public class Humano extends Superheroe {
     private boolean sexo;
     private String nacionalidad;
 
+    public Humano(String nombre, int edad, boolean sexo, String nacionalidad, Traje traje) {
+        super(nombre,traje);
+        this.edad = edad;
+        this.sexo = sexo;
+        this.nacionalidad = nacionalidad;
+    }
+
     public void hablar() {
         System.out.printf("Hola, soy %s y tengo %s años.", this.nombre, this.edad);
     }
