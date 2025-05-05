@@ -7,8 +7,10 @@ public class EquipoSuperheroe {
     private String baseOperaciones;
     private String mision;
 
-    public EquipoSuperheroe(List<Superheroe> superheroes) {
+    public EquipoSuperheroe(List<Superheroe> superheroes, String baseOperaciones, String mision) {
         this.superheroes = superheroes;
+        this.baseOperaciones = baseOperaciones;
+        this.mision = mision;
     }
 
     public void combatirCrimen() {

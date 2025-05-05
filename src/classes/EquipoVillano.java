@@ -7,15 +7,17 @@ public class EquipoVillano {
     private String baseVillanos;
     private String ubicacion;
 
-    public EquipoVillano(List<Villano> villanos) {
+    public EquipoVillano(List<Villano> villanos, String baseVillanos, String ubicacion) {
         this.villanos = villanos;
+        this.baseVillanos = baseVillanos;
+        this.ubicacion = ubicacion;
     }
 
-    public String eliminarSuperheroes() {
+    public void eliminarSuperheroes() {
         System.out.println("Eliminando superhéroes...");
     }
 
-    public String dominarMundo() {
+    public void dominarMundo() {
         System.out.println("Dominando el mundo...");
     }
 
@@ -23,8 +25,16 @@ public class EquipoVillano {
         return this.baseVillanos;
     }
 
+    public void asignarBase(String base) {
+        this.baseVillanos = base;
+    }
+
     public String obtenerUbicacion() {
         return this.ubicacion;
+    }
+
+    public void asignarUbicacion(String ubicacion) {
+        this.ubicacion = ubicacion;
     }
 
     public List<Villano> obtenerVillanos() {

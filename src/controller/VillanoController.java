@@ -14,7 +14,7 @@ public class VillanoController {
         return VillanoController.instance;
     }
 
-    public EquipoVillano crearEquipo(List<Villano> villanos){
-        return new EquipoVillano(villanos);
+    public EquipoVillano crearEquipo(List<Villano> villanos, String baseVillanos, String ubicacion) {
+        return new EquipoVillano(villanos, baseVillanos, ubicacion);
     }
 }

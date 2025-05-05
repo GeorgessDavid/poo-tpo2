@@ -14,7 +14,7 @@ public class SuperheroeController {
         return SuperheroeController.instance;
     }
 
-    public EquipoSuperheroe crearEquipo(List<Superheroe> superheroes) {
-        return new EquipoSuperheroe(superheroes);
+    public EquipoSuperheroe crearEquipo(List<Superheroe> superheroes, String baseOperaciones, String mision) {
+        return new EquipoSuperheroe(superheroes, baseOperaciones, mision);
     }
 }
