@@ -3,9 +3,13 @@ package classes;
 import java.util.List;
 
 public class EquipoVillano {
-    private List<Villano> villanos;
+    private final List<Villano> villanos;
     private String baseVillanos;
     private String ubicacion;
+
+    public EquipoVillano(List<Villano> villanos) {
+        this.villanos = villanos;
+    }
 
     public String eliminarSuperheroes() {
         System.out.println("Eliminando superhéroes...");
@@ -21,5 +25,13 @@ public class EquipoVillano {
 
     public String obtenerUbicacion() {
         return this.ubicacion;
+    }
+
+    public List<Villano> obtenerVillanos() {
+        return villanos;
+    }
+
+    public void asignarVillano(Villano villano) {
+        this.villanos.add(villano);
     }
 }
